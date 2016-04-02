@@ -1,0 +1,28 @@
+{
+  "cdir": {
+    "prefix": "console.dir",
+    "body": "console.dir $0",
+    "description": "console dir"
+  },
+  "cerr": {
+    "prefix": "console.err",
+    "body": "console.error $0",
+    "description": "console error"
+  },
+  "cinf": {
+    "prefix": "console.info",
+    "body": "console.info $0",
+    "description": "console info"
+  },
+  "clog": {
+    "prefix": "console.log",
+    "body": "console.log $0",
+    "description": "console log"
+  },
+
+  "cwarn": {
+    "prefix": "console.warn",
+    "body": "console.warn $0",
+    "description": "console warn"
+  }
+}
