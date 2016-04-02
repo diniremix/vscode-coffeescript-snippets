@@ -1,0 +1,39 @@
+{
+    "name": "vscode-coffescript-snippets",
+    "displayName": "coffescript Snippets",
+    "description": "coffescript Snippets for Visual Studio Code",
+    "version": "0.0.1",
+    "author": "Jonathan Rauprich",
+    "publisher": "diniremix",
+    "license": "MIT",
+    "icon": "logo.png",
+    "galleryBanner": {
+        "color": "#569a83",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^0.10.1"
+    },
+    "categories": [
+        "Snippets", "Languages", "Other"
+    ],
+    "homepage": "https://github.com/diniremix/vscode-coffeescript-snippets",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/diniremix/vscode-coffeescript-snippets.git"
+    },
+    "bugs": {
+        "url": "https://github.com/diniremix/vscode-coffeescript-snippets/issues"
+    },
+    "activationEvents": [
+        "onLanguage:coffeescript"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "coffeescript",
+                "path": "./snippets/console.json"
+            }
+        ]
+    }
+}
