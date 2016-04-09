@@ -1,7 +1,7 @@
 {
-    "name": "vscode-coffescript-snippets",
-    "displayName": "coffescript Snippets",
-    "description": "coffescript Snippets for Visual Studio Code",
+    "name": "vscode-coffeescript-snippets",
+    "displayName": "coffeescript Snippets",
+    "description": "coffeescript Snippets for Visual Studio Code",
     "version": "0.0.1",
     "author": "Peter Anderson",
     "publisher": "diniremix",

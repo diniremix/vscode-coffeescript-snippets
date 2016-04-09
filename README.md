@@ -1,12 +1,12 @@
-# CoffeScript snippets for Visual Studio Code
+# coffeescript snippets for Visual Studio Code
 
 ## Installation
 
-- To install, press `F1` and select `Extensions: Install Extensions` and then search for and select `coffescript snippets`.
+- To install, press `F1` and select `Extensions: Install Extensions` and then search for and select `coffeescript snippets`.
 
 or
  
-- `ext install vscode-coffescript-snippets`
+- `ext install vscode-coffeescript-snippets`
 
 ## Snippets
 
