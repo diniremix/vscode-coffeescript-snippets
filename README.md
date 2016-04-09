@@ -6,13 +6,30 @@
 
 or
  
-- `ext install JavaScriptSnippets`
+- `ext install vscode-coffescript-snippets`
 
 ## Snippets
 
-## Console
+
+### Console
 - dir, error, info, log, warn
 
+### Class
+- class and class extends
+
+### Conditionals
+- if, if else, if else if, ternary operator, unless, switch case
+
+### Loops
+- for in, for range, for range object, for in list, for each, for each by, range
+
+### JQuery
+- document on ready
+- event [ using $('#')]
+- on click [ using $('#').on 'click' ]
+
+### Angular
+- controller and service
 
 ## Thanks to
 - [luchox25](https://github.com/luchox25/)
