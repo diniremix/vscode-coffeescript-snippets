@@ -1,0 +1,12 @@
+{
+    "controller": {
+        "prefix": "controller",
+        "body": "do ->\n\n\t$1 = ($rootScope, $scope, $state, $log) ->\n\n\t\tvm = this\n\n\t\tvm.main = ->\n\t\t\t$log.info 'main $1...'\n\t\t\treturn\n\n\t\tvm.main()\n\n\t\t## $1\n\t\treturn\n\n\t'use strict'\n\tangular.module('$2').controller '$1', $1\n\t$1.$inject = [\n\t\t'$rootScope'\n\t\t'$scope'\n\t\t'$state'\n\t\t'$log'\n\t]\n\treturn\n",
+        "description": "angular controller"
+    },
+    "factory": {
+        "prefix": "factory",
+        "body": "do ->\n\t$1 = ($rootScope, $log) ->\n\n\t\t@$2 = ($3) ->\n\t\t\t$log.warn 'awesome service!'\n\t\t\t#$2\n\t\t\treturn\n\t\t#$1\n\t\treturn\n\n\t'use strict'\n\tangular.module('$4').service '$1', $1\n\t$1.$inject = [\n\t\t'$rootScope'\n\t\t'$log'\n\t]\n\treturn\n",
+        "description": "angular factory"
+    }
+}
