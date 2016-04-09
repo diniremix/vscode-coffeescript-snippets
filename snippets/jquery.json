@@ -1,0 +1,22 @@
+{
+    "do": {
+        "prefix": "do",
+        "body": "do ->\n\t$1\n\treturn",
+        "description": "document on ready"
+    },
+    "do-window-document": {
+        "prefix": "do (window, document)",
+        "body": "do (window, document) ->\n\t$1\n\treturn",
+        "description": "document on ready"
+    },   
+    "event": {
+        "prefix": "event",
+        "body": "$('#$1').$2 , (${3:event}) ->\n\t$4\n\treturn",
+        "description": "event (JQuery)"
+    },
+    "on-click": {
+        "prefix": "on click",
+        "body": "$('#$1').on 'click', (${2:event}) ->\n\t$3\n\treturn",
+        "description": "on click event (JQuery)"
+    }
+}
