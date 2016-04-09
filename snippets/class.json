@@ -1,0 +1,12 @@
+{
+    "Class": {
+        "prefix": "class",
+        "body": "class $1\n\tconstructor: (@$2) ->\n\t\t$3",
+        "description": "coffeescript class"
+    },
+    "ClassExtenden": {
+        "prefix": "class extends",
+        "body": "class $1 extends $2\n\tconstructor: (@$3) ->\n\t\t$4",
+        "description": "Class Extended"
+    }
+}
