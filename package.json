@@ -32,7 +32,31 @@
         "snippets": [
             {
                 "language": "coffeescript",
+                "path": "./snippets/angular.json"
+            },
+            {
+                "language": "coffeescript",
+                "path": "./snippets/class.json"
+            },
+            {
+                "language": "coffeescript",
+                "path": "./snippets/conditional.json"
+            },
+            {
+                "language": "coffeescript",
                 "path": "./snippets/console.json"
+            },
+            {
+                "language": "coffeescript",
+                "path": "./snippets/jquery.json"
+            },
+            {
+                "language": "coffeescript",
+                "path": "./snippets/loops.json"
+            },
+            {
+                "language": "coffeescript",
+                "path": "./snippets/utils.json"
             }
         ]
     }
