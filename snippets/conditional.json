@@ -1,0 +1,32 @@
+{
+    "if": {
+        "prefix": "if",
+        "body": "if $1\n\t$2",
+        "description": "if"
+    },
+    "if-else": {
+        "prefix": "if-else",
+        "body": "if $1\n\t$2\nelse\n\t $3",
+        "description": "if else"
+    },
+    "if-else-if": {
+        "prefix": "if-else-if",
+        "body": "if $1\n\t$2\nelse if $3\n\t$4\nelse\n\t$5",
+        "description": "if else if"
+    },
+    "if-ternary": {
+        "prefix": "if-ternary",
+        "body": "if $1 then $2 else $3",
+        "description": "ternary operator"
+    },
+    "unless": {
+        "prefix": "unless",
+        "body": "unless $1 is $2",
+        "description": "unless"
+    },
+    "switch": {
+        "prefix": "switch",
+        "body": "switch $1\n\twhen $2\n\t\t$3\n\telse $4\n\t\t$5",
+        "description": "switch case"
+    }
+}
