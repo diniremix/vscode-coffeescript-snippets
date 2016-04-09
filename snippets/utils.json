@@ -1,0 +1,45 @@
+{
+    "js-embedded": {
+        "prefix": "js",
+        "body": "= `function() {\n\t\t$1\n\t}`",
+        "description": "Embedded JavaScript"
+    },
+
+    "try": {
+        "prefix": "try catch",
+        "body": "try\n\t$1\ncatch $2\n\t$3",
+        "description": "try catch"
+    },
+    "try-catch-finally": {
+        "prefix": "try catch finally",
+        "body": "try\n\t$1\ncatch $2\n\t$3\nfinally\n\t$4",
+        "description": "try catch finally"
+    },
+
+    "string-interpolation": {
+        "prefix": "string",
+        "body": "\"#{$1} $2\"",
+        "description": "string interpolation"
+    },
+    "string-block": {
+        "prefix": "block",
+        "body": "\"\"\"\n\t$1\n\t\"\"\"",
+        "description": "string block"
+    },
+
+    "functions": {
+        "prefix": "fn",
+        "body": "($1) ->\n\t$2",
+        "description": "function"
+    },
+    "setTimeout": {
+        "prefix": "setTimeout",
+        "body": "setTimeout (->\n\t$1\n\treturn\n\t), $2",
+        "description": "setTimeout function"
+    },
+    "comment": {
+        "prefix": "comment",
+        "body": "###\n$1\n###",
+        "description": "multiline comment"
+    }
+}
