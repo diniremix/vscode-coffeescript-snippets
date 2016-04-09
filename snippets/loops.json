@@ -1,0 +1,37 @@
+{
+    "for-in": {
+        "prefix": "for in",
+        "body": "for $1 in $2\n\t$3",
+        "description": "for in"
+    },
+    "for-range": {
+        "prefix": "for range",
+        "body": "for $1 in [$2...$3] by $4\n\t$5",
+        "description": "for range"
+    },
+    "for-object": {
+        "prefix": "for object",
+        "body": "for $1, $2 of ${3:object}\n\t$4",
+        "description": "for range object"
+    },
+    "for-in-list": {
+        "prefix": "for in list",
+        "body": "($1 $2 for $2 in $3)",
+        "description": "for in list"
+    },
+    "each": {
+        "prefix": "for each",
+        "body": "($1 for $1 in [$2..$3])",
+        "description": "for each"
+    },
+    "each-by": {
+        "prefix": "for each-by",
+        "body": "($1 for $1 in [$2..$3] by $4)",
+        "description": "for each by"
+    },
+    "range": {
+        "prefix": "range",
+        "body": "$1 [$2..$3]",
+        "description": "range"
+    }
+}
