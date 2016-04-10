@@ -25,9 +25,6 @@
     "bugs": {
         "url": "https://github.com/diniremix/vscode-coffeescript-snippets/issues"
     },
-    "activationEvents": [
-        "onLanguage:coffeescript"
-    ],
     "contributes": {
         "snippets": [
             {
