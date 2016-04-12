@@ -2,7 +2,7 @@
     "name": "vscode-coffeescript-snippets",
     "displayName": "coffeescript Snippets",
     "description": "coffeescript Snippets for Visual Studio Code",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Peter Anderson",
     "publisher": "diniremix",
     "license": "MIT",
