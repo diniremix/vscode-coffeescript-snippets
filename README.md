@@ -29,7 +29,7 @@ or
 - on click [ using $('#').on 'click' ]
 
 ### Angular
-- controller and service
+- controller, service, factory, router (AngularUI Router example)
 
 ## Thanks to
 - [luchox25](https://github.com/luchox25/)
