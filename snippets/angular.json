@@ -1,12 +1,54 @@
 {
     "controller": {
         "prefix": "controller",
-        "body": "do ->\n\n\t$1 = ($rootScope, $scope, $state, $log) ->\n\n\t\tvm = this\n\n\t\tvm.main = ->\n\t\t\t$log.info 'main $1...'\n\t\t\treturn\n\n\t\tvm.main()\n\n\t\t## $1\n\t\treturn\n\n\t'use strict'\n\tangular.module('$2').controller '$1', $1\n\t$1.$inject = [\n\t\t'$rootScope'\n\t\t'$scope'\n\t\t'$state'\n\t\t'$log'\n\t]\n\treturn\n",
-        "description": "angular controller"
+        "body": "do ->\n\n\t$1 = ($rootScope, $scope, $state, $log) ->\n\n\t\tvm = this\n\n\t\tvm.main = ->\n\t\t\t$log.info 'main $1...'\n\t\t\treturn\n\n\t\tvm.main()\n\n\t\t## $1\n\t\treturn\n\n\t'use strict'\n\tangular.module('$2').controller '$1', $1\n\t$1.$inject = [\n\t\t'$rootScope'\n\t\t'$scope'\n\t\t'$state'\n\t\t'$log'\n\t]\n\treturn\n$0",
+        "description": "angularJS controller"
     },
     "service": {
         "prefix": "service",
-        "body": "do ->\n\t$1 = ($rootScope, $log) ->\n\n\t\t@$2 = ($3) ->\n\t\t\t$log.warn 'awesome service!'\n\t\t\t#$2\n\t\t\treturn\n\t\t#$1\n\t\treturn\n\n\t'use strict'\n\tangular.module('$4').service '$1', $1\n\t$1.$inject = [\n\t\t'$rootScope'\n\t\t'$log'\n\t]\n\treturn\n",
-        "description": "angular service"
+        "body": "do ->\n\t$1 = ($rootScope, $log) ->\n\n\t\t@$2 = ($3) ->\n\t\t\t$log.warn 'awesome service!'\n\t\t\t#$2\n\t\t\treturn\n\t\t#$1\n\t\treturn\n\n\t'use strict'\n\tangular.module('$4').service '$1', $1\n\t$1.$inject = [\n\t\t'$rootScope'\n\t\t'$log'\n\t]\n\treturn\n$0",
+        "description": "angularJS service"
+    },
+    "factory": {
+        "prefix": "factory",
+        "body": "do ->\n\t$1 = ($rootScope, $log) ->\n\t\t{\n\t\t\t$3:($4) ->\n\t\t\t\treturn\n\t\t}\n\n\tangular.module('$2').factory '$1', $1\n\t$1.$inject = [\n\t\t'$rootScope'\n\t\t'$log'\n\t]\nreturn\n$0",
+        "description": "angularJS factory"
+    },
+    "ui-router": {
+        "prefix": "router",
+        "body": [
+            "do ->",
+            "\t$1 = ($stateProvider, $locationProvider, $urlRouterProvider) ->",
+            "\t\t# Set the following to true to enable the HTML5 Mode",
+            "\t\t$locationProvider.html5Mode false",
+            "\t\t# For any unmatched url, redirect to /$2",
+            "\t\t$urlRouterProvider.otherwise '/app/$2'",
+            "\t\t#",
+            "\t\t# Application Routes",
+            "\t\t# -----------------------------------",
+            "\t\t$stateProvider",
+            "\t\t\t.state 'app',",
+            "\t\t\t\turl: '/app'",
+            "\t\t\t\tabstract: true",
+            "\t\t\t\ttemplateUrl: ''\n",
+            "\t\t\t.state 'app.$3',",
+            "\t\t\t\turl: '/$3'",
+            "\t\t\t\ttitle: '$3'",
+            "\t\t\t\ttemplateUrl: ''",
+            "\t\t\t\tcontroller:''",
+            "\t\t\t\tcontrollerAs:''",
+            "\t\t\t\tresolve: {}",
+            "\t\treturn",
+            "\t# $1\n",
+            "\t'use strict'",
+            "\tangular.module('$4').config $1",
+            "\t$1.$inject = [",
+            "\t\t'$stateProvider'",
+            "\t\t'$locationProvider'",
+            "\t\t'$urlRouterProvider'",
+            "\t]",
+            "\treturn\n$0"
+        ],
+        "description": "angularJS ui-router"
     }
 }
